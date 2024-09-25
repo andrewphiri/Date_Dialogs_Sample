@@ -61,7 +61,7 @@ fun ManufacturedDate() {
             DateUtils().convertMillisToLocalDate(it)
         }
         val dateToString = millisToLocalDate?.let {
-            DateUtils().dateToString(millisToLocalDate)
+            DateUtils().dateToString(it)
         } ?: ""
     Column {
         DatePicker(
